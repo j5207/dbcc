@@ -15,7 +15,7 @@ typedef struct {
 	bool generate_asserts;
 } dbc2c_options_t;
 
-int dbc2c(dbc_t *dbc, FILE *c, FILE *h, const char *name, dbc2c_options_t *copts);
+int dbc2c(dbc_t *dbc, FILE *h, const char *name, dbc2c_options_t *copts);
 
 #ifdef __cplusplus
 }

@@ -83,67 +83,67 @@ static int dbc2cWrapper(dbc_t *dbc, const char *dbc_file, const char *file_only,
 	assert(dbc);
 	assert(dbc_file);
 	assert(file_only);
-	char *cname = replace_file_type(dbc_file,  "c");
+	// char *cname = replace_file_type(dbc_file,  "c");
 	char *hname = replace_file_type(dbc_file,  "h");
 	char *fname = replace_file_type(file_only, "h");
-	FILE *c = fopen_or_die(cname, "wb");
+	// FILE *c = fopen_or_die(cname, "wb");
 	FILE *h = fopen_or_die(hname, "wb");
-	const int r = dbc2c(dbc, c, h, fname, copts);
-	fclose(c);
+	const int r = dbc2c(dbc, h, fname, copts);
+	// fclose(c);
 	fclose(h);
-	free(cname);
+	// free(cname);
 	free(hname);
 	free(fname);
 	return r;
 }
 
-static int dbc2xmlWrapper(dbc_t *dbc, const char *dbc_file, bool use_time_stamps)
-{
-	assert(dbc);
-	assert(dbc_file);
-	char *name = replace_file_type(dbc_file, "xml");
-	FILE *o = fopen_or_die(name, "wb");
-	const int r = dbc2xml(dbc, o, use_time_stamps);
-	fclose(o);
-	free(name);
-	return r;
-}
+// static int dbc2xmlWrapper(dbc_t *dbc, const char *dbc_file, bool use_time_stamps)
+// {
+// 	assert(dbc);
+// 	assert(dbc_file);
+// 	char *name = replace_file_type(dbc_file, "xml");
+// 	FILE *o = fopen_or_die(name, "wb");
+// 	const int r = dbc2xml(dbc, o, use_time_stamps);
+// 	fclose(o);
+// 	free(name);
+// 	return r;
+// }
 
-static int dbc2csvWrapper(dbc_t *dbc, const char *dbc_file)
-{
-	assert(dbc);
-	assert(dbc_file);
-	char *name = replace_file_type(dbc_file, "csv");
-	FILE *o = fopen_or_die(name, "wb");
-	const int r = dbc2csv(dbc, o);
-	fclose(o);
-	free(name);
-	return r;
-}
+// static int dbc2csvWrapper(dbc_t *dbc, const char *dbc_file)
+// {
+// 	assert(dbc);
+// 	assert(dbc_file);
+// 	char *name = replace_file_type(dbc_file, "csv");
+// 	FILE *o = fopen_or_die(name, "wb");
+// 	const int r = dbc2csv(dbc, o);
+// 	fclose(o);
+// 	free(name);
+// 	return r;
+// }
 
-static int dbc2bsmWrapper(dbc_t *dbc, const char *dbc_file, bool use_time_stamps)
-{
-	assert(dbc);
-	assert(dbc_file);
-	char *name = replace_file_type(dbc_file, "bsm");
-	FILE *o = fopen_or_die(name, "wb");
-	const int r = dbc2bsm(dbc, o, use_time_stamps);
-	fclose(o);
-	free(name);
-	return r;
-}
+// static int dbc2bsmWrapper(dbc_t *dbc, const char *dbc_file, bool use_time_stamps)
+// {
+// 	assert(dbc);
+// 	assert(dbc_file);
+// 	char *name = replace_file_type(dbc_file, "bsm");
+// 	FILE *o = fopen_or_die(name, "wb");
+// 	const int r = dbc2bsm(dbc, o, use_time_stamps);
+// 	fclose(o);
+// 	free(name);
+// 	return r;
+// }
 
-static int dbc2jsonWrapper(dbc_t *dbc, const char *dbc_file, bool use_time_stamps)
-{
-	assert(dbc);
-	assert(dbc_file);
-	char *name = replace_file_type(dbc_file, "json");
-	FILE *o = fopen_or_die(name, "wb");
-	const int r = dbc2json(dbc, o, use_time_stamps);
-	fclose(o);
-	free(name);
-	return r;
-}
+// static int dbc2jsonWrapper(dbc_t *dbc, const char *dbc_file, bool use_time_stamps)
+// {
+// 	assert(dbc);
+// 	assert(dbc_file);
+// 	char *name = replace_file_type(dbc_file, "json");
+// 	FILE *o = fopen_or_die(name, "wb");
+// 	const int r = dbc2json(dbc, o, use_time_stamps);
+// 	fclose(o);
+// 	free(name);
+// 	return r;
+// }
 
 int main(int argc, char **argv)
 {
@@ -160,65 +160,65 @@ int main(int argc, char **argv)
 	};
 	int opt = 0;
 
-	while ((opt = dbcc_getopt(argc, argv, "hvbjgxCtDpukso:")) != -1) {
-		switch (opt) {
-		case 'h':
-			usage(argv[0]);
-			help();
-			break;
-		case 'v':
-			set_log_level(++log_level);
-			debug("log level: %u", log_level);
-			break;
-		case 'g':
-			return printf("DBCC Grammar =>\n%s\n", parse_get_grammar()) < 0;
-		case 'b':
-			convert = CONVERT_TO_BSM;
-			break;
-		case 'j':
-			convert = CONVERT_TO_JSON;
-			break;
-		case 'x':
-			convert = CONVERT_TO_XML;
-			break;
-		case 'C':
-			convert = CONVERT_TO_CSV;
-			break;
-		case 't':
-			copts.use_time_stamps = true;
-			debug("using time stamps");
-			break;
-		case 'D':
-			copts.use_doubles_for_encoding = true;
-			debug("using doubles for encoding");
-			break;
-		case 'p':
-			copts.generate_print = true;
-			debug("generate code for print");
-			break;
-		case 'u':
-			copts.generate_unpack = true;
-			debug("generate code for unpack");
-			break;
-		case 'k':
-			copts.generate_pack = true;
-			debug("generate code for pack");
-			break;
-		case 'o':
-			outdir = dbcc_optarg;
-			debug("output directory: %s", outdir);
-			break;
-		case 's':
-			copts.generate_asserts = false;
-			debug("asserts disabled - apparently you think silent corruption is a good thing", outdir);
-			break;
-		default:
-			fprintf(stderr, "invalid options\n");
-			usage(argv[0]);
-			help();
-			break;
-		}
-	}
+	// while ((opt = dbcc_getopt(argc, argv, "hvbjgxCtDpukso:")) != -1) {
+	// 	switch (opt) {
+	// 	case 'h':
+	// 		usage(argv[0]);
+	// 		help();
+	// 		break;
+	// 	case 'v':
+	// 		set_log_level(++log_level);
+	// 		debug("log level: %u", log_level);
+	// 		break;
+	// 	case 'g':
+	// 		return printf("DBCC Grammar =>\n%s\n", parse_get_grammar()) < 0;
+	// 	case 'b':
+	// 		convert = CONVERT_TO_BSM;
+	// 		break;
+	// 	case 'j':
+	// 		convert = CONVERT_TO_JSON;
+	// 		break;
+	// 	case 'x':
+	// 		convert = CONVERT_TO_XML;
+	// 		break;
+	// 	case 'C':
+	// 		convert = CONVERT_TO_CSV;
+	// 		break;
+	// 	case 't':
+	// 		copts.use_time_stamps = true;
+	// 		debug("using time stamps");
+	// 		break;
+	// 	case 'D':
+	// 		copts.use_doubles_for_encoding = true;
+	// 		debug("using doubles for encoding");
+	// 		break;
+	// 	case 'p':
+	// 		copts.generate_print = true;
+	// 		debug("generate code for print");
+	// 		break;
+	// 	case 'u':
+	// 		copts.generate_unpack = true;
+	// 		debug("generate code for unpack");
+	// 		break;
+	// 	case 'k':
+	// 		copts.generate_pack = true;
+	// 		debug("generate code for pack");
+	// 		break;
+	// 	case 'o':
+	// 		outdir = dbcc_optarg;
+	// 		debug("output directory: %s", outdir);
+	// 		break;
+	// 	case 's':
+	// 		copts.generate_asserts = false;
+	// 		debug("asserts disabled - apparently you think silent corruption is a good thing", outdir);
+	// 		break;
+	// 	default:
+	// 		fprintf(stderr, "invalid options\n");
+	// 		usage(argv[0]);
+	// 		help();
+	// 		break;
+	// 	}
+	// }
 
 	// if (!copts.generate_unpack && !copts.generate_pack && !copts.generate_print) {
 	// 	copts.generate_print  = true;
@@ -247,27 +247,28 @@ int main(int argc, char **argv)
 		}
 
 		int r = 0;
-		switch(convert) {
-		case CONVERT_TO_C:
-			r = dbc2cWrapper(dbc, outpath, dbcc_basename(argv[i]), &copts);
-			break;
-		case CONVERT_TO_XML:
-			r = dbc2xmlWrapper(dbc, outpath, copts.use_time_stamps);
-			break;
-		case CONVERT_TO_CSV:
-			if(copts.use_time_stamps)
-				error("Cannot use time stamps when specifying CSV option");
-			r = dbc2csvWrapper(dbc, outpath);
-			break;
-		case CONVERT_TO_BSM:
-			r = dbc2bsmWrapper(dbc, outpath, copts.use_time_stamps);
-			break;
-		case CONVERT_TO_JSON:
-			r = dbc2jsonWrapper(dbc, outpath, copts.use_time_stamps);
-			break;
-		default:
-			error("invalid conversion type: %d", convert);
-		}
+		r = dbc2cWrapper(dbc, outpath, dbcc_basename(argv[i]), &copts);
+		// switch(convert) {
+		// case CONVERT_TO_C:
+		// 	r = dbc2cWrapper(dbc, outpath, dbcc_basename(argv[i]), &copts);
+		// 	break;
+		// case CONVERT_TO_XML:
+		// 	r = dbc2xmlWrapper(dbc, outpath, copts.use_time_stamps);
+		// 	break;
+		// case CONVERT_TO_CSV:
+		// 	if(copts.use_time_stamps)
+		// 		error("Cannot use time stamps when specifying CSV option");
+		// 	r = dbc2csvWrapper(dbc, outpath);
+		// 	break;
+		// case CONVERT_TO_BSM:
+		// 	r = dbc2bsmWrapper(dbc, outpath, copts.use_time_stamps);
+		// 	break;
+		// case CONVERT_TO_JSON:
+		// 	r = dbc2jsonWrapper(dbc, outpath, copts.use_time_stamps);
+		// 	break;
+		// default:
+		// 	error("invalid conversion type: %d", convert);
+		// }
 		if(r < 0)
 			warning("conversion process failed: %u/%u", r, convert);
 

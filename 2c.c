@@ -913,11 +913,11 @@ fail:
 	return NULL;
 }
 
-int dbc2c(dbc_t *dbc, FILE *c, FILE *h, const char *name, dbc2c_options_t *copts)
+int dbc2c(dbc_t *dbc, FILE *h, const char *name, dbc2c_options_t *copts)
 {
 	/**@todo print out ECU node information */
 	assert(dbc);
-	assert(c);
+	// assert(c);
 	assert(h);
 	assert(name);
 	assert(copts);
