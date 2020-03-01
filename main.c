@@ -220,11 +220,11 @@ int main(int argc, char **argv)
 		}
 	}
 
-	if (!copts.generate_unpack && !copts.generate_pack && !copts.generate_print) {
-		copts.generate_print  = true;
-		copts.generate_pack   = true;
-		copts.generate_unpack = true;
-	}
+	// if (!copts.generate_unpack && !copts.generate_pack && !copts.generate_print) {
+	// 	copts.generate_print  = true;
+	// 	copts.generate_pack   = true;
+	// 	copts.generate_unpack = true;
+	// }
 
 	for(int i = dbcc_optind; i < argc; i++) {
 		debug("reading => %s", argv[i]);
