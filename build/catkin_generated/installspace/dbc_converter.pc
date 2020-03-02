@@ -1,0 +1,8 @@
+prefix=/home/ji.han/work_space/dbc_converter/.release
+
+Name: dbc_converter
+Description: Description of dbc_converter
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/ji.han/work_space/dbc_converter/.release/lib 
+Requires: 

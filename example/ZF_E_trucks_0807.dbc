@@ -1,0 +1,499 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Server VCU Body Brakes
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ WP_Spd : 0|16@1- (0.01,0) [0|0] "kph" Vector__XXX
+ SG_ AuxBattErr : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AuxBattCurr : 0|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+ SG_ AuxBattVolt : 0|16@1- (0.01,0) [-327.68|327.67] "V" Vector__XXX
+ SG_ SOH : 0|8@1+ (1,0) [0|0] "%" Vector__XXX
+ SG_ SOC : 0|8@1+ (1,0) [0|0] "%" Vector__XXX
+ SG_ TiRemn : 0|8@1+ (1,0) [0|0] "hr" Vector__XXX
+ SG_ patch_type : 0|8@1+ (0.1,0) [0|25.5] "" Vector__XXX
+ SG_ ActEngBrkPerc : 0|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ Pressure_P4 : 0|8@1+ (80,0) [0|255] "mbar" Vector__XXX
+ SG_ Pressure_P1 : 0|8@1+ (80,0) [0|255] "mbar" Vector__XXX
+ SG_ Pressure_P21 : 0|8@1+ (80,0) [0|255] "mbar" Vector__XXX
+ SG_ Pressure_P22 : 0|8@1+ (80,0) [0|255] "mbar" Vector__XXX
+ SG_ Pressure_P42 : 0|8@1+ (80,0) [0|255] "mbar" Vector__XXX
+ SG_ EBS_button : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EBS_status : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ XPR_ErrState : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ATC_EC_Act : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ATC_BC_Act : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ABS_Active : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ABS_OffRoad_Switch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ABS_Fully_Op : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ABS_Amber_WL : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ATC_Info_Lamp : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ IdentityNum : 0|21@1+ (1,0) [0|2097151] "" Vector__XXX
+ SG_ Manufacturer : 0|11@1+ (1,0) [0|2047] "" Vector__XXX
+ SG_ EcuInstance : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ FctInstance : 0|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Reserved : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehSystem : 0|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ VehSysInstance : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ArbAddrCapable : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACHeatOption : 0|2@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ACControlMode : 0|2@1- (1,0) [0|0] "" Vector__XXX
+ SG_ PreCruiseCtrlDeactivRq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CabInteriorTempCmd : 0|16@1+ (0.03125,-273) [-273|1734.96875] "deg C" Vector__XXX
+ SG_ AuxHeaterCoolantPumpRq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BatteryMainSwitchHoldRq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ OperatorSeatDirectionSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SeatBeltSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VhclLmtngSpdGvrnrDecrementSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VhclLmtngSpdGvrnrIncrementSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VhclLmtngSpdGovernorEnableSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DslPrtcltFltrRgnrtnInhibitSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DslPrtcltFltrRgnrtionForceSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AtomaticGearShiftingEnableSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EngAutomaticStartEnableSwitch : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AuxHeaterModeRq : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ RqEngZoneHeating : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RqCabZoneHeating : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SelectedMaxVehicleSpeedLimit : 0|8@1+ (1,0) [0|250] "" Vector__XXX
+ SG_ EnginePercentLoadAtCurrentSpeed : 0|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ AcceleratorPedalPosition2 : 0|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+ SG_ AcceleratorPedalPosition1 : 0|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+ SG_ xbr_demand : 0|8@1+ (0.025,0) [0|6.375] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_00 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_00 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TirePress_00 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePress_01 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePressThresholdDetection_00 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TirePressThresholdDetection_20 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TirePressThresholdDetection_21 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TirePressThresholdDetection_22 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TirePressThresholdDetection_23 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TirePressThresholdDetection_30 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TirePressThresholdDetection_31 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TirePressThresholdDetection_32 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TirePressThresholdDetection_33 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TireTemp_01 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_10 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_12 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_13 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_20 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_21 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_22 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_23 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_30 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_31 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_32 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_33 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_11 : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ CTITireStatus_01 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_10 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_11 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_12 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_13 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_20 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_21 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_22 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_23 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_30 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_31 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_32 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTITireStatus_33 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_01 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_10 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_11 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_12 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_13 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_20 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_21 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_22 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_23 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_30 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_31 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelEndElectricalFault_32 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_01 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_10 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_11 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_12 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_13 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_20 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_21 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_22 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_23 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_30 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_31 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CTIWheelSensorStatus_32 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TireAirLeakageRate_00 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_01 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_10 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_11 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_12 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_13 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_20 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_21 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_22 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_23 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_30 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_31 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TireAirLeakageRate_32 : 0|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
+ SG_ TirePress_10 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePress_11 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePress_12 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePress_13 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePress_20 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePress_21 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePress_22 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePress_23 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePress_30 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePress_31 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePress_32 : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ TirePressThresholdDetection_01 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TirePressThresholdDetection_10 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TirePressThresholdDetection_11 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ TirePressThresholdDetection_12 : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ AxleWeight_00 : 0|16@1+ (0.5,0) [0|32127.5] "kg" Vector__XXX
+ SG_ AxleWeight_10 : 0|16@1+ (0.5,0) [0|32127.5] "kg" Vector__XXX
+ SG_ AxleWeight_20 : 0|16@1+ (0.5,0) [0|32127.5] "kg" Vector__XXX
+ SG_ TrailerWeight_00 : 0|16@1+ (2,0) [0|128510] "kg" Vector__XXX
+ SG_ TrailerWeight_10 : 0|16@1+ (2,0) [0|128510] "kg" Vector__XXX
+ SG_ TrailerWeight_20 : 0|16@1+ (2,0) [0|128510] "kg" Vector__XXX
+ SG_ CargoWeight_00 : 0|16@1+ (2,0) [0|128510] "kg" Vector__XXX
+ SG_ CargoWeight_10 : 0|16@1+ (2,0) [0|128510] "kg" Vector__XXX
+ SG_ CargoWeight_20 : 0|16@1+ (2,0) [0|128510] "kg" Vector__XXX
+ SG_ BrkPos_Ord : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Counter : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ EBI_Mode : 0|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ BrakeDemand : 0|16@1- (0.000488,-15.687) [-31.6778|0.303295] "m/s2" Vector__XXX
+ SG_ Counter : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ EBI_Mode : 0|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ BrakeDemand : 0|16@1- (0.000488,-15.687) [-31.6778|0.303295] "m/s2" Vector__XXX
+ SG_ EchoedPosition_Degree : 0|32@1- (0.04395,0) [-94381900|94381900] "degree" Vector__XXX
+ SG_ ActualPosition_degree : 0|32@1- (0.04395,0) [-94381900|94381900] "degree" Vector__XXX
+ SG_ ReAXError : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PullCompensation : 0|16@1- (0.0439,0) [-1438.52|1438.47] "" Vector__XXX
+ SG_ HandWheelVelocity : 0|16@1- (0.000977,0) [-32.0143|32.0134] "" Vector__XXX
+ SG_ HandWheelTorque : 0|16@1- (0.000977,0) [-32.0143|32.0134] "NM" Vector__XXX
+ SG_ ReqMode : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ RealMode : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ XPR1CtrlSts : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ XPRPReq : 0|8@1+ (0.4,0) [0|255] "%" Vector__XXX
+ SG_ PrimDrvrPDmd : 0|8@1+ (80,0) [0|255] "mbar" Vector__XXX
+ SG_ AirBrkSts : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ PrimDelivery : 0|8@1+ (80,0) [0|20400] "mbar" Vector__XXX
+ SG_ PneumaticSupplyPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ ParkingAnd_orTrailerAirPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ ServiceBrakeCircuit1AirPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ ServiceBrakeCircuit2AirPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ AuxEquipmentSupplyPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ AirSuspensionSupplyPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ AirCompressorStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DriveAxleLocation : 0|8@1+ (1.02,0) [0|255] "" Vector__XXX
+ SG_ DriveAxleLiftAirPress : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ DriveAxleTemp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ DriveAxleLubePress : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ SteerAxleTemp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ SteerAxleLubePress : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ Aftertreatment1IntakeNOx : 0|16@1+ (0.05,-200) [-200|3012.75] "ppm" Vector__XXX
+ SG_ Aftertreatment1IntakeO2 : 0|16@1+ (0.000514,-12) [-12|21.0271] "%" Vector__XXX
+ SG_ Aftrtrtmnt1IntkGsSnsrPowerStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntakeGasSensorAtTemp : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkeNOxReadingStable : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkWdRngO2RdngStable : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkGsSnsrHtrPrlmnryF : 0|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkGsSnsorHeaterCtrl : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkNOxSnsrPrlmnryFMI : 0|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkOxygnSnsrPrlmnryF : 0|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ BarometricPress : 0|8@1+ (0.5,0) [0|125] "kPa" Vector__XXX
+ SG_ CabInteriorTemp : 0|16@1+ (0.03125,-273) [-273|1734.97] "deg C" Vector__XXX
+ SG_ AmbientAirTemp : 0|16@1+ (0.03125,-273) [-273|1734.97] "deg C" Vector__XXX
+ SG_ EngAirIntakeTemp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ RoadSurfaceTemp : 0|16@1+ (0.03125,-273) [-273|1734.97] "deg C" Vector__XXX
+ SG_ Aftrtrtmnt1DslPrtcltFltrStMnClbO : 0|16@1+ (1,0) [0|161] "%" Vector__XXX
+ SG_ Aftrtrtmnt1DslPrtcltFltrStStndrd : 0|16@1+ (1,0) [0|161] "%" Vector__XXX
+ SG_ ArmrestSwitchMatrixSwitch1 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ArmrestSwitchMatrixSwitch2 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ArmrestSwitchMatrix2Switch1 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ArmrestSwitchMatrix2Switch2 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PitchRateExRange : 0|16@1+ (0.007797,-250) [-250|250.996] "deg/sec" Vector__XXX
+ SG_ RollRateExRange : 0|16@1+ (0.007797,-250) [-250|250.996] "deg/sec" Vector__XXX
+ SG_ YawRateExRange : 0|16@1+ (0.007797,-250) [-250|250.996] "deg/sec" Vector__XXX
+ SG_ PitchRateExRangeFigureOfMerit : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RollRateExRangeFigureOfMerit : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ YawRateExRangeFigureOfMerit : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AngularRateMeasurementLatency : 0|8@1+ (0.5,0) [0|125] "ms" Vector__XXX
+ SG_ Aftertreatment1SupplyAirPress : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
+ SG_ Aftertreatment1PurgeAirPress : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
+ SG_ Aftertreatment1AirPressCtrl : 0|16@1+ (0.0025,0) [0|160.637] "%" Vector__XXX
+ SG_ Aftrtratment1AirPressActuatorPos : 0|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ Aftertreatment1AirSystemRelay : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1AtmizationAirActuator : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftertreatment1PurgeAirActuator : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftertreatment1AirEnableActuator : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtreatment1SecondAirDiffPress : 0|16@1+ (0.007812,-250) [-250|251.96] "kPa" Vector__XXX
+ SG_ Aftertreatment1SecondAirTemp : 0|16@1+ (0.03125,-273) [-273|1734.97] "deg C" Vector__XXX
+ SG_ Aftertreatment1SecondAirMassFlow : 0|16@1+ (0.2,0) [0|12851] "kg/h per bit" Vector__XXX
+ SG_ Aftertreatment1SecondAirPress : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
+ SG_ Aftertreatment1FuelPress1 : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
+ SG_ Aftertreatment1FuelRate : 0|16@1+ (0.05,0) [0|3212.75] "L/h" Vector__XXX
+ SG_ Aftertreatment1FuelPress1Ctrl : 0|16@1+ (1,0) [0|161] "%" Vector__XXX
+ SG_ Aftertreatment1FuelDrainActuator : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftertreatment1Ignt : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtreatment1RegenerationStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtreatment1FuelEnableActuator : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1FlInjector1HeaterCtrl : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ Aftertreatment1FuelPress2 : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
+ SG_ Aftertreatment1FuelPumpRelayCtrl : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1FlFlwDverterValveCtrl : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1FelPress2ActuatorCtrl : 0|16@1+ (1,0) [0|161] "%" Vector__XXX
+ SG_ Aftrtrtmnt1HydrcrbnDsrIntkFlTemp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ DslParticulateFilterIntakePress1 : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
+ SG_ DslParticulateFilterOutletPress1 : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
+ SG_ Aftertreatment1IntakeNOx : 0|16@1+ (0.05,-200) [-200|3012.75] "ppm" Vector__XXX
+ SG_ Aftertreatment1IntakeO2 : 0|16@1+ (0.000514,-12) [-12|21.0271] "%" Vector__XXX
+ SG_ Aftrtrtmnt1IntkGsSnsrPowerStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntakeGasSensorAtTemp : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkeNOxReadingStable : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkWdRngO2RdngStable : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkGsSnsrHtrPrlmnryF : 0|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkGsSnsorHeaterCtrl : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkNOxSnsrPrlmnryFMI : 0|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Aftrtrtmnt1IntkOxygnSnsrPrlmnryF : 0|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ EngAltBearing1Temp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ EngAltBearing2Temp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ EngAltWinding1Temp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ EngAltWinding2Temp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ EngAltWinding3Temp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ LevelPresetFrontAxleLeft : 0|16@1+ (1,-3200) [-3200|3226] "mm" Vector__XXX
+ SG_ LevelPresetFrontAxleRight : 0|16@1+ (1,-3200) [-3200|3226] "mm" Vector__XXX
+ SG_ LevelPresetRearAxleLeft : 0|16@1+ (1,-3200) [-3200|3226] "mm" Vector__XXX
+ SG_ LevelPresetRearAxleRight : 0|16@1+ (1,-3200) [-3200|3226] "mm" Vector__XXX
+ SG_ DamperStiffnessFrontAxle : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ DamperStiffnessRearAxle : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ DamperStiffnessLift_TagAxle : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ ElctrncShckAbsrbrCtrlMdFrontAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ElctrncShckAbsrbrCtrlMdeRearAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ElctrncShckAbsrbrCtrlMdLft_TgAxl : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BellowPressFrontAxleLeft : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
+ SG_ BellowPressFrontAxleRight : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
+ SG_ BellowPressRearAxleLeft : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
+ SG_ BellowPressRearAxleRight : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
+ SG_ RelativeLevelFrontAxleLeft : 0|16@1+ (0.1,-3200) [-3200|3225.5] "mm" Vector__XXX
+ SG_ RelativeLevelFrontAxleRight : 0|16@1+ (0.1,-3200) [-3200|3225.5] "mm" Vector__XXX
+ SG_ RelativeLevelRearAxleLeft : 0|16@1+ (0.1,-3200) [-3200|3225.5] "mm" Vector__XXX
+ SG_ RelativeLevelRearAxleRight : 0|16@1+ (0.1,-3200) [-3200|3225.5] "mm" Vector__XXX
+ SG_ AutomaticTractionHelp : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ KneelingRqLeftSide : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ KneelingRqRightSide : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ KneelingCtrlModeRq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ NominalLevelRqFrontAxle : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ NominalLevelRqRearAxle : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ LevelCtrlModeRq : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ LiftAxle1PosCmd : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LiftAxle2PosCmd : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DamperStiffnessRqFrontAxle : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ DamperStiffnessRqRearAxle : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ DamperStiffnessRqLift_TagAxle : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ KneelingCmdFrontAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ KneelingCmdRearAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ProhibitAirSuspensionCtrl : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AllowLevelCtrlDuringBrakingCmd : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SpeedDependentLevelCtrlRq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PrhbitAutomaticAirSuspensionCtrl : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MemoryLevelRq : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ NominalLevelFrontAxle : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ NominalLevelRearAxle : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ BelowNominalLevelFrontAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BelowNominalLevelRearAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AboveNominalLevelFrontAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AboveNominalLevelRearAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LoweringCtrlModeFrontAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LoweringCtrlModeRearAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LiftingCtrlModeFrontAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LiftingCtrlModeRearAxle : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ KneelingInformation : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ LevelCtrlMode : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SecurityDevice : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VehicleMotionInhibit : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DoorRelease : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LiftAxle1Pos : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ FrontAxleInBumperRange : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RearAxleInBumperRange : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LiftAxle2Pos : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SuspensionRemoteCtrl1 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SuspensionRemoteCtrl2 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AllwLevelCtrlDuringBrakingStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SpeedDependantLevelCtrlStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SuspensionCtrlRefusalInformation : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MemoryLevel : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ AltSpeed : 0|16@1+ (0.5,0) [0|32127.5] "rpm" Vector__XXX
+ SG_ Alt1Status : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Alt2Status : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Alt3Status : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Alt4Status : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AuxVacuumPressReading : 0|16@1+ (0.5,0) [0|32127.5] "kPa" Vector__XXX
+ SG_ AuxGagePressReading1 : 0|16@1+ (0.5,0) [0|32127.5] "kPa" Vector__XXX
+ SG_ AuxAbsPressReading : 0|16@1+ (0.5,0) [0|32127.5] "kPa" Vector__XXX
+ SG_ SolarIntensityPercent : 0|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ SolarSensorMax : 0|8@1+ (1,0) [0|100] "mW/cm^2" Vector__XXX
+ SG_ SpecificHumidity : 0|16@1+ (0.01,0) [0|642.55] "g/kg" Vector__XXX
+ SG_ BarometricPress : 0|8@1+ (0.5,0) [0|125] "kPa" Vector__XXX
+ SG_ CabInteriorTemp : 0|16@1+ (0.03125,-273) [-273|1734.97] "deg C" Vector__XXX
+ SG_ AmbientAirTemp : 0|16@1+ (0.03125,-273) [-273|1734.97] "deg C" Vector__XXX
+ SG_ EngAirIntakeTemp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ RoadSurfaceTemp : 0|16@1+ (0.03125,-273) [-273|1734.97] "deg C" Vector__XXX
+ SG_ EngAirStartPress : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ PneumaticSupplyPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ ParkingAnd_orTrailerAirPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ ServiceBrakeCircuit1AirPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ ServiceBrakeCircuit2AirPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ AuxEquipmentSupplyPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ AirSuspensionSupplyPress : 0|8@1+ (8,0) [0|2000] "kPa" Vector__XXX
+ SG_ AirCompressorStatus : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ DriveAxleLocation : 0|8@1+ (1.02,0) [0|255] "" Vector__XXX
+ SG_ DriveAxleLiftAirPress : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ DriveAxleTemp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ DriveAxleLubePress : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+ SG_ SteerAxleTemp : 0|8@1+ (1,-40) [-40|210] "deg C" Vector__XXX
+ SG_ SteerAxleLubePress : 0|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
+
+BO_ 2566909735 D2XX_ReAX_Cmd: 8 Vector__XXX
+ SG_ MessageChecksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageCounter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ CommandFromExternalController : 8|16@1- (0.0625,0) [-2048|2047.9375] "deg" Vector__XXX
+ SG_ DesiredOperatingMode : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2634019091 ReAX_GearB: 8 Vector__XXX
+ SG_ PullCompensation : 48|16@1- (0.0439,0) [-1438.5152|1438.4713] "" Vector__XXX
+ SG_ HandWheelVelocity : 32|16@1- (0.000977,0) [-32.0143|32.0134] "" Vector__XXX
+ SG_ HandWheelTorque : 16|16@1- (0.000977,0) [-32.0143|32.0134] "NM" Vector__XXX
+ SG_ ReAXError : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ReqMode : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ RealMode : 0|4@1+ (1,0) [0|15] ""  VCU
+
+BO_ 2634018835 ReAX_GearA: 8 Vector__XXX
+ SG_ EchoedPosition_Degree : 32|32@1- (0.04395,0) [-94381900|94381900] "degree" Vector__XXX
+ SG_ ActualPosition_degree : 0|32@1- (0.04395,0) [-94381900|94381900] "degree"  VCU
+
+BO_ 2566909715 ReAX_Cmd: 8 VCU
+ SG_ SteeringCmd : 8|32@1- (0.0439,0) [-94274500|94274500] "degree" Vector__XXX
+ SG_ Mode : 0|8@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 2566909971 D2XX_ReAX_ColnA: 8 Vector__XXX
+ SG_ MessageCounter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageChecksum : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ AbsoluteSteeringPositionQF : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RequestedMode : 44|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ActualMode : 40|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ StatusError : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ExternalInputCommandEcho : 16|16@1- (0.0625,0) [-2048|2047.9375] "deg" Vector__XXX
+ SG_ AbsoluteSteeringPosition : 0|16@1- (0.0625,0) [-2048|2047.9375] "deg" Vector__XXX
+
+BO_ 2566910227 D2XX_ReAX_ColnB: 8 Vector__XXX
+ SG_ MessageCounter : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageChecksum : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ HandsOnDetected : 54|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HandsOffDetected : 53|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IgnitionState : 52|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ColumnVelocityQF : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ColumnTorqueQF : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ColumnVelocity : 16|16@1- (0.0009765625,0) [-32|31.9990234375] "rev/sec" Vector__XXX
+ SG_ PullCompensation : 32|16@1- (0.0625,0) [-2048|2047.9375] "deg" Vector__XXX
+ SG_ ColumnTorque : 0|16@1- (0.0009765625,0) [-32|31.9990234375] "Nm" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 2634019091 25;
+BA_ "GenMsgCycleTime" BO_ 2634018835 25;
+BA_ "GenMsgCycleTime" BO_ 2566909971 10;
+BA_ "GenMsgCycleTime" BO_ 2566910227 10;
+VAL_ 3221225472 CTIWheelEndElectricalFault_00 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_00 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 TirePressThresholdDetection_00 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_20 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_21 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_22 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_23 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_30 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_31 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_32 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_33 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 CTITireStatus_01 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_10 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_11 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_12 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_13 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_20 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_21 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_22 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_23 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_30 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_31 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_32 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_33 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_01 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_10 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_11 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_12 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_13 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_20 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_21 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_22 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_23 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_30 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_31 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_32 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_01 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_10 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_11 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_12 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_13 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_20 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_21 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_22 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_23 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_30 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_31 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_32 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 TirePressThresholdDetection_01 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_10 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_11 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_12 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+
