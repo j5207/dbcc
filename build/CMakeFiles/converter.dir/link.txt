@@ -1,1 +1,0 @@
-/usr/bin/cc  -O3 -DNDEBUG   CMakeFiles/converter.dir/src/main.c.o CMakeFiles/converter.dir/src/2c.c.o CMakeFiles/converter.dir/src/can.c.o CMakeFiles/converter.dir/src/mpc.c.o CMakeFiles/converter.dir/src/parse.c.o CMakeFiles/converter.dir/src/util.c.o CMakeFiles/converter.dir/src/getopt.c.o  -o devel/lib/dbc_converter/converter -rdynamic 
