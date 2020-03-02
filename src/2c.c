@@ -767,7 +767,7 @@ static int msg2h(can_msg_t *msg, FILE *h, dbc2c_options_t *copts, const char *go
 			if (signal2scaling(name, msg->id, msg->sigs[i], h, false, true, god, copts) < 0)
 				return -1;
 	}
-	fputs("\n\n", h);
+	// fputs("\n\n", h);
 	return 0;
 }
 
@@ -948,10 +948,10 @@ int dbc2c(dbc_t *dbc, FILE *h, const char *name, dbc2c_options_t *copts)
 	qsort(dbc->messages, dbc->message_count, sizeof(dbc->messages[0]), message_compare_function);
 
 	/* sort by size for better struct packing */
-	for (size_t i = 0; i < dbc->message_count; i++) {
-		can_msg_t *msg = dbc->messages[i];
-		qsort(msg->sigs, msg->signal_count, sizeof(msg->sigs[0]), signal_compare_function);
-	}
+	// for (size_t i = 0; i < dbc->message_count; i++) {
+	// 	can_msg_t *msg = dbc->messages[i];
+	// 	qsort(msg->sigs, msg->signal_count, sizeof(msg->sigs[0]), signal_compare_function);
+	// }
 
 	/* header file (begin) */
 	fprintf(h, "/** CAN message encoder/decoder: automatically generated - do not edit\n");
