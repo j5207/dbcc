@@ -1,0 +1,58 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
+
+apps.pyc
+.vscode/
+install
+log
+*.tar.gz
+/script/2019-12-26-16-50-15
+# vim swp
+*.swp
+# temp file
+*.*~
+*.travis*
+*.pyc
+
+# IDE temp file
+*.idea
+.idea/
+
+cmake-build-debug
+
+# tspkg
+/build/
+/.release/
+/.develop/
+build
+.release
+.develop
