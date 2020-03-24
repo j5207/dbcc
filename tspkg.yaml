@@ -9,3 +9,4 @@ build: |
   cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_DIR -DCMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE ..
   make -j8
   make install
+  cp devel/lib/dbc_converter/converter ../example/converter

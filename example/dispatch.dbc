@@ -1,0 +1,712 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Bywire_Rx Bywire_Tx
+
+
+BO_ 2147614724 PlanningInfo1: 8 Bywire_Tx
+ SG_ WP_y : 16|16@1- (0.005,0) [-163.84|163.835] "m" Vector__XXX
+ SG_ WP_x : 0|16@1- (0.005,0) [-163.84|163.835] "m" Vector__XXX
+
+BO_ 2147516758 VehLogRpt4: 8 Bywire_Rx
+ SG_ HRW_RearAxleRightWheelSpeed : 48|16@1+ (0.003906,0) [0|250] "km/h" Vector__XXX
+ SG_ HRW_RearAxleLeftWheelSpeed : 32|16@1+ (0.003906,0) [0|250] "km/h" Vector__XXX
+ SG_ HRW_FrontAxleRightWheelSpeed : 16|16@1+ (0.003906,0) [0|250] "km/h" Vector__XXX
+ SG_ HRW_FrontAxleLeftWheelSpeed : 0|16@1+ (0.003906,0) [0|250] "km/h" Vector__XXX
+
+BO_ 2147484440 PwrRpt: 8 Bywire_Rx
+ SG_ PwrSevereWarn : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AuxV : 0|16@1+ (0.5,0) [0|32767.5] "mV" Vector__XXX
+
+BO_ 2147484438 SwtTRpt: 8 Bywire_Rx
+ SG_ TSevereWarn : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SwtT : 0|16@1+ (0.11,-28.919) [-28.919|7179.931] "deg C" Vector__XXX
+
+BO_ 2147680257 AcsyRpt: 8 Bywire_Rx
+ SG_ HighBeamHeadLightRpt : 8|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LowBeamHeadLightRpt : 6|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HazardLightRpt : 4|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RightTurnSignalLightsRpt : 2|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LeftTurnSignalLightsRpt : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TurnSignalLightsDriverCmd : 10|2@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147516756 OctopusStatus: 8 Bywire_Tx
+ SG_ ControllerStatus : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SystemStatus : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PlannerStatus : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LocalizationStatus : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PerceptionStatus : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2147516754 VehInfo: 1 Bywire_Tx
+ SG_ P7Support : 6|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ _2C2Present : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VehType : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2147553416 VcuTimeSync: 8 Bywire_Rx
+ SG_ RollingCounter : 32|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SimTime : 0|32@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147484436 AcRpt: 8 Bywire_Rx
+ SG_ SvrT : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AcT : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CmprSpd : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AcSts : 16|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CtrlMod : 8|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AcFlt : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147484434 AcCmdRpt: 8 Bywire_Rx
+ SG_ CbnT : 48|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ ReqdFanSpd : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SetT : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ OperMod : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147516752 TimeSync: 8 Vector__XXX
+ SG_ RollingCounter : 32|32@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Seconds : 24|8@1+ (1,0) [0|0] "sec" Vector__XXX
+ SG_ Minutes : 16|8@1+ (1,0) [0|0] "min" Vector__XXX
+ SG_ Hour : 8|8@1+ (1,0) [0|0] "hr" Vector__XXX
+ SG_ Day : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147516560 ROST_LogReport: 8 Vector__XXX
+ SG_ AirBrake_Pressure : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Log_Mode : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Log_Status : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Retarder_Torque : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ foundationbrakeuse : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ cmd_accel : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ current_speed : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+
+BO_ 2147516552 ROST_LogPdlReport: 7 Vector__XXX
+ SG_ VDC2_Long_Accel : 48|8@1+ (0.1,-12.5) [-12.5|12.5] "m/s^2" Vector__XXX
+ SG_ DisTFwrVeh : 40|8@1+ (1,0) [0|250] "m" Vector__XXX
+ SG_ SpdFwrVeh : 32|8@1+ (1,0) [0|250] "km/h" Vector__XXX
+ SG_ remote_accel : 24|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ brake_pedal : 8|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ accel_pedal : 0|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 2147516550 ROS_LogCmd: 8 Vector__XXX
+ SG_ log_enable_demand : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ xbr_ebi_mode : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ brake_tau : 24|8@1- (0.1,0) [-12.8|12.7] "" Vector__XXX
+ SG_ brake_limit : 16|8@1- (0.01,0) [-1.28|1.27] "" Vector__XXX
+ SG_ accel_cmd : 0|16@1- (0.0005,0) [-16.384|16.3835] "m/s^2" Vector__XXX
+
+BO_ 2147516738 VehLatRpt1: 8 Bywire_Rx
+ SG_ MessageChecksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageCounter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ LatSts : 32|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ A_y : 16|16@1+ (0.00048828,-15.687) [-15.687|16.3124298] "m/s2" Vector__XXX
+ SG_ YawRate : 0|16@1+ (0.0001220703125,-3.92) [-3.92|4.0798779296875] "rad/s" Vector__XXX
+
+BO_ 2147516736 SteerRpt1: 8 Bywire_Rx
+ SG_ SteerSpd : 32|16@1- (0.00097656,0) [-31.99991808|31.99894152] "rev/sec" Vector__XXX
+ SG_ MessageChecksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageCounter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SteerAgCmd : 16|16@1- (0.0005,0) [0|0] "rad" Vector__XXX
+ SG_ SteerAgMan : 0|16@1- (0.0005,0) [0|0] "rad" Vector__XXX
+
+BO_ 2147516728 LatCmdMai: 8 Bywire_Tx
+ SG_ MessageChecksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageCounter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ LatCtrlMod : 32|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SteerEffort : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AgCmd : 0|16@1- (0.04395,0) [0|0] "deg" Vector__XXX
+
+BO_ 2147516418 ROS_WPoint: 7 Vector__XXX
+ SG_ Turn_Signal : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ WP_speed : 32|16@1- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ WP_y : 16|16@1- (0.005,0) [-163.84|163.835] "" Vector__XXX
+ SG_ WP_x : 0|16@1- (0.005,0) [-163.84|163.835] "" Vector__XXX
+
+BO_ 2147553424 SvrRpt1: 6 Bywire_Rx
+ SG_ Voltage2 : 32|16@1+ (0.05,0) [0|3276.75] "V" Vector__XXX
+ SG_ Temperature2 : 16|8@1- (1,-40) [-168|87] "degC" Vector__XXX
+ SG_ Current_Server : 0|16@1- (0.05,-1600) [-3238.4|38.3500000000001] "" Vector__XXX
+
+BO_ 2147484422 GenRpt1: 6 Bywire_Rx
+ SG_ DisTFwrVeh : 40|8@1+ (1,0) [0|250] "m" Vector__XXX
+ SG_ SpdFwrVeh : 32|8@1+ (1,0) [0|250] "km/h" Vector__XXX
+ SG_ WindShieldWiperStatus : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ RainStatus : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ GrossCombinationVehicleWeight : 0|16@1+ (10,0) [0|642550] "kg" Vector__XXX
+
+BO_ 2147553426 AutoRpt: 8 Bywire_Rx
+ SG_ SteerFail : 13|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LightsFail : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EngBrkFail : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AirBrkFail : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TransFail : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EngFail : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VehStat : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147484420 EnvRpt1: 8 Bywire_Rx
+
+BO_ 2147484418 BMSRpt2: 8 Bywire_Rx
+ SG_ StrtgBattVolt : 40|16@1+ (0.01,0) [0|0] "V" Vector__XXX
+ SG_ RlySts : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147553428 VINRpt: 1 Bywire_Rx
+ SG_ VINNum : 0|8@1+ (1.02,0) [0|0] "" Vector__XXX
+
+BO_ 2147516726 LtgRpt: 2 Bywire_Rx
+ SG_ HighBeamHeadLightFail : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LowBeamHeadLightFail : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RunningLightFail : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HazardLightFail : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RightTurnSignalFail : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LeftTurnSignalFail : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147516710 AirBrkRpt1: 8 Bywire_Rx
+ SG_ XPR1CtrlSts : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ XPRPReq : 24|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+ SG_ PrimDrvrPDmd : 16|8@1+ (80,0) [0|255] "mbar" Vector__XXX
+ SG_ AirBrkSts : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ PrimDelivery : 0|8@1+ (80,0) [0|20400] "mbar" Vector__XXX
+
+BO_ 2147516708 EngBrkRpt: 8 Bywire_Rx
+ SG_ EngRequestedTorque_TorqueLimit : 24|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ ActlMxAvlblRetarderPercentTorque : 16|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ EngBrkSts : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ActEngBrkTqPerc : 0|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+
+BO_ 2147516694 TrsmRpt2: 8 Bywire_Rx
+ SG_ EngRequestedTorque_TorqueLimit : 24|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ TrsmSts : 16|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ TrsmActGearRat : 0|16@1+ (0.001,0) [0|64.255] "" Vector__XXX
+
+BO_ 2147516692 TrsmRpt1: 8 Bywire_Rx
+ SG_ TransSelectedGear : 48|8@1+ (1,-125) [-125|125] "" Vector__XXX
+ SG_ TransDrivelineEngaged : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TrsmShiftInProc : 40|2@1- (1,0) [0|3] "" Vector__XXX
+ SG_ TrsmInSpd : 24|16@1+ (0.125,0) [0|8031.88] "rpm" Vector__XXX
+ SG_ TrsmOutSpd : 8|16@1+ (0.125,0) [0|8031.88] "rpm" Vector__XXX
+ SG_ CurrentGear : 0|8@1+ (1,-125) [-125|125] "" Vector__XXX
+
+BO_ 2147516690 EngRpt3: 8 Bywire_Rx
+ SG_ EngSpeed : 8|16@1+ (0.125,0) [0|8031.88] "rpm" Vector__XXX
+ SG_ EngSts : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2147516688 EngRpt2: 8 Bywire_Rx
+ SG_ FuLvl2 : 56|8@1+ (0.4,0) [0|102] "" Vector__XXX
+ SG_ FuLvl1 : 48|8@1+ (0.4,0) [0|102] "" Vector__XXX
+ SG_ EngAvrgFuEco : 32|16@1+ (0.001953,0) [0|125.49] "km/L" Vector__XXX
+ SG_ EngInstantaneousFuEco : 16|16@1+ (0.001953,0) [0|125.49] "km/L" Vector__XXX
+ SG_ EngFuRate : 0|16@1+ (0.05,0) [0|3212.75] "L/h" Vector__XXX
+
+BO_ 2147516680 EngRpt1: 8 Bywire_Rx
+ SG_ ActlMaxAvailableEngPercentTorque : 56|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ EngDemandPercentTorque : 48|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ DriversDemandEngPercentTorque : 40|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ EstEngPrsiticLossesPercentTorque : 32|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ EngNomFricPerTq : 24|8@1+ (1,-125) [-125|130] "%" Vector__XXX
+ SG_ EngCooltT : 16|8@1+ (1,-40) [-40|215] "deg C" Vector__XXX
+ SG_ EngTq : 8|8@1+ (1,-125) [-125|130] "%" Vector__XXX
+ SG_ EngSpd : 0|8@1+ (12.5,0) [0|3187.5] "rpm" Vector__XXX
+
+BO_ 2147516678 SteerColnCmdRpt: 8 Bywire_Rx
+ SG_ MessageChecksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageCounter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SteerCmd : 8|32@1- (0.04395,0) [0|0] "deg" Vector__XXX
+ SG_ SteerMod : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147516676 SteerGearCmdRpt: 8 Bywire_Rx
+ SG_ MessageChecksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageCounter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SteerCmd : 8|32@1- (0.04395,0) [-1400|1400] "deg" Vector__XXX
+ SG_ SteerMod : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2147516674 SteerRpt2: 8 Bywire_Rx
+ SG_ SteerTq : 40|16@1- (0.00097656,0) [0|0] "Nm" Vector__XXX
+ SG_ SteerGearCentrPos : 24|16@1- (0.04395,0) [0|0] "deg" Vector__XXX
+ SG_ SteerColnCentrPos : 8|16@1- (0.04395,0) [0|0] "deg" Vector__XXX
+ SG_ MessageChecksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageCounter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SteerColnSts : 4|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SteerGearSts : 0|4@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2147516551 LogCmdOpt: 8 Bywire_Tx
+ SG_ BrkArbn : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MessageChecksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageCounter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ BrkPTar : 24|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+ SG_ GearTar : 16|8@1+ (1,-125) [-125|130] "" Vector__XXX
+ SG_ EngBrkTqPercTar : 8|8@1+ (1,-125) [-125|130] "%" Vector__XXX
+ SG_ EngTqPercTar : 0|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+
+BO_ 2147614738 IMUInfo: 8 Bywire_Tx
+ SG_ PitchRate : 56|8@1- (0.0001,0) [-0.0128|0.0127] "rad/s" Vector__XXX
+ SG_ RollRate : 48|8@1- (0.0001,0) [-0.0128|0.0127] "rad/s" Vector__XXX
+ SG_ YawRate : 32|16@1- (1E-005,0) [-0.32768|0.32767] "rad/s" Vector__XXX
+ SG_ Ay : 16|16@1- (0.001,0) [-32.768|32.767] "m/s^2" Vector__XXX
+ SG_ Ax : 0|16@1- (0.001,0) [-32.768|32.767] "m/s^2" Vector__XXX
+
+BO_ 2147614736 LocalInfo2: 8 Bywire_Tx
+ SG_ NovatelLongitude : 32|32@1- (2E-008,-100) [-142.94967296|-57.05032706] "deg" Vector__XXX
+ SG_ NovatelLatitude : 0|32@1- (8E-009,35) [17.820130816|52.179869176] "deg" Vector__XXX
+
+BO_ 2147614728 LocalInfo1: 8 Bywire_Tx
+ SG_ NovatelPitch : 48|16@1- (0.003,0) [-98.304|98.301] "" Vector__XXX
+ SG_ NovatelAltitude : 32|16@1- (0.055,1600) [-202.24|3402.185] "" Vector__XXX
+ SG_ NovatelEastVelocity : 16|16@1- (0.0012,0) [-39.3216|39.3204] "" Vector__XXX
+ SG_ NovatelNorthVelocity : 0|16@1- (0.0012,0) [-39.3216|39.3204] "" Vector__XXX
+
+BO_ 2147516545 LatCmdOpt: 8 Bywire_Tx
+ SG_ SteerCentrPosReq : 0|16@1- (0.04395,0) [0|0] "deg" Vector__XXX
+
+BO_ 2147484416 BMSRpt1: 8 Bywire_Rx
+ SG_ AuxBattErr : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AuxBattCurr : 40|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+ SG_ AuxBattVolt : 24|16@1- (0.01,0) [-327.68|327.67] "V" Vector__XXX
+ SG_ SOH : 16|8@1+ (1,0) [0|0] "%" Vector__XXX
+ SG_ SOC : 8|8@1+ (1,0) [0|0] "%" Vector__XXX
+ SG_ TiRemn : 0|8@1+ (1,0) [0|0] "hr" Vector__XXX
+
+BO_ 2147553430 VCU_Version: 8 Bywire_Rx
+ SG_ truck_type : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ patch_version : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ feature_version : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_version : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2147553432 OrdStatus: 4 Bywire_Rx
+ SG_ Cruse_Ord : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Tht_Ord : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BrkEBI_Ord : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ St_Ord : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Emgcy_Ord : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147516672 ROST_FuelEconReport: 8 Vector__XXX
+ SG_ EngFuRate : 0|16@1+ (0.05,0) [0|3212.75] "L/h" Vector__XXX
+ SG_ EngInstantaneousFuEco : 16|16@1+ (0.001953,0) [0|125.49] "km/L" Vector__XXX
+ SG_ EngAvrgFuEco : 32|16@1+ (0.001953,0) [0|125.49] "km/L" Vector__XXX
+
+BO_ 2147516568 ROST_ModReport: 8 Vector__XXX
+ SG_ CurrentGear : 0|8@1+ (1,-125) [-125|125] "" Vector__XXX
+ SG_ ActEngBrkPerc : 8|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+
+BO_ 2147516564 ROS_ModCmd: 8 Vector__XXX
+ SG_ Target_EngineBrakePercentage : 8|8@1+ (1,-125) [-125|125] "%" Vector__XXX
+ SG_ Target_Gear : 0|8@1+ (1,-125) [-125|125] "" Vector__XXX
+
+BO_ 2147516566 EBC2_8096: 8 Vector__XXX
+ SG_ FrontAxleSpeed : 0|16@1+ (0.003906,0) [0|250.98] "km/h" Vector__XXX
+ SG_ RelativeSpeedFrontAxleLeftWheel : 16|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelativeSpeedFrontAxleRightWheel : 24|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelativeSpeedRearAxle1LeftWheel : 32|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelativeSpeedRearAxle1RightWheel : 40|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelativeSpeedRearAxle2LeftWheel : 48|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelativeSpeedRearAxle2RightWheel : 56|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+
+BO_ 2147516432 AcsyCmd: 8 Bywire_Tx
+ SG_ HighBeamHeadLightCmd : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LowBeamHeadLightCmd : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ HazardLightSwitch : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RightTurnSignalLightsCmd : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ LeftTurnSignalLightsCmd : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2147516420 ROS_Long_Control: 8 Vector__XXX
+ SG_ Accel : 0|16@1- (0.005,150) [-13.84|313.835] "" Vector__XXX
+
+BO_ 2147516421 ROS_Lat_Control: 8 Vector__XXX
+ SG_ Steering : 0|16@1- (0.005,-150) [-313.84|13.835] "" Vector__XXX
+
+BO_ 2147516423 ROS_Log_Speed: 8 Vector__XXX
+ SG_ Speed : 0|16@1- (0.005,-150) [-313.84|13.835] "" Vector__XXX
+
+BO_ 2147516544 ROS_LatCmd: 8 Vector__XXX
+ SG_ lat_enable_demand : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ steering_effort : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ angle_cmd : 0|16@1- (0.0005,0) [-16.384|16.3835] "rad" Vector__XXX
+
+BO_ 2147516740 LogCmdMai: 8 Bywire_Tx
+ SG_ MessageChecksum : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MessageCounter : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ LogCtrlUrgency : 24|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+ SG_ ATar : 0|8@1+ (0.1,-12.5) [-12.5|13] "" Vector__XXX
+ SG_ LogCtrlMod : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SpdTar : 8|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector__XXX
+
+BO_ 2147516424 ROST_Active_Tri: 8 Vector__XXX
+ SG_ Lat_Active : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2147516548 ROST_LatReport: 8 Vector__XXX
+ SG_ Lat_Mode : 36|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Lat_Status : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ accel_y : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ yaw_rate : 0|16@1- (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 2147516546 ROST_LatStReport: 8 Vector__XXX
+ SG_ HW_Torque : 48|8@1- (1,0) [-128|127] "" Vector__XXX
+ SG_ angle_speed : 32|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ angle_cmd : 16|16@1- (0.0005,0) [-16.384|16.3835] "" Vector__XXX
+ SG_ angle_manual : 0|16@1- (0.0005,0) [-16.384|16.3835] "" Vector__XXX
+
+BO_ 2147516744 VehLogRpt1: 8 Bywire_Rx
+ SG_ LogCtrlUrgencyFb : 56|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ LogCtrlModFb : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SpdTarFb : 32|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector__XXX
+ SG_ VehA : 0|8@1+ (0.1,-12.5) [-12.5|13] "" Vector__XXX
+ SG_ VehSpd : 8|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector__XXX
+ SG_ ATarFb : 24|8@1+ (0.1,-12.5) [-12.5|13] "" Vector__XXX
+
+BO_ 2147516742 VehLogRpt2: 8 Bywire_Rx
+ SG_ AccelPedalKickdownSwitch : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ LogSts : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ DrvrBrkSwt : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RemAPedlPos : 8|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+ SG_ BrkPedlPos : 16|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+ SG_ DrvrAPedlPos : 0|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+
+BO_ 2147516562 ROST_GlobalReport: 8 Vector__XXX
+ SG_ lat_error_status : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ log_error_status : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ FuLvl2 : 40|8@1+ (0.4,0) [0|102] "" Vector__XXX
+ SG_ FuLvl1 : 32|8@1+ (0.4,0) [0|102] "" Vector__XXX
+ SG_ gear_ratio : 24|8@1+ (0.1,0) [0|25.5] "" Vector__XXX
+ SG_ engine_speed : 16|8@1+ (8,0) [0|2040] "" Vector__XXX
+ SG_ current_torque : 0|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
+
+BO_TX_BU_ 2147516754 : Bywire_Rx,Bywire_Tx;
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 Voltage2 "Voltage after PDS main relay";
+CM_ SG_ 3221225472 Voltage1 "Voltage before PDS main relay";
+CM_ SG_ 3221225472 Temperature2 "Temperature after main relay";
+CM_ SG_ 3221225472 Temperature1 "Temperature before main relay";
+CM_ SG_ 2147553424 Voltage2 "Voltage after PDS main relay";
+CM_ SG_ 2147553424 Temperature2 "Temperature after main relay";
+CM_ SG_ 2147614738 PitchRate "about x axis rotation";
+CM_ SG_ 2147614738 RollRate "about y axis rotation";
+CM_ SG_ 2147614738 YawRate "about z axis rotation";
+CM_ SG_ 2147614738 Ay "longitudinal acceleration";
+CM_ SG_ 2147614738 Ax "lateral acceleration";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "BusType" "";
+BA_ "GenMsgCycleTime" BO_ 2147516758 20;
+BA_ "GenMsgCycleTime" BO_ 2147484440 50;
+BA_ "GenMsgCycleTime" BO_ 2147484438 50;
+VAL_ 3221225472 CTIWheelEndElectricalFault_00 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_00 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 TirePressThresholdDetection_00 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_20 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_21 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_22 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_23 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_30 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_31 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_32 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_33 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 CTITireStatus_01 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_10 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_11 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_12 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_13 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_20 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_21 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_22 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_23 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_30 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_31 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_32 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTITireStatus_33 0 "Ok" 1 "TireLeakDetected" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_01 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_10 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_11 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_12 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_13 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_20 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_21 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_22 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_23 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_30 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_31 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelEndElectricalFault_32 0 "Ok" 1 "NotDefined" 2 "Error" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_01 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_10 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_11 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_12 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_13 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_20 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_21 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_22 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_23 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_30 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_31 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 CTIWheelSensorStatus_32 0 "Off_IsolatedFromCTIPressCtrl" 1 "On" 2 "NotDefined" 3 "NotSupported" ;
+VAL_ 3221225472 TirePressThresholdDetection_01 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_10 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_11 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 TirePressThresholdDetection_12 0 "ExtrmOvrPrssTrPrssrIsAtALvlWhrT" 1 "OvrPrssTrPrssrIsHghrThnThPrssrD" 2 "NWrnngPrssTrPrssrIsWthnThThrshl" 3 "UndrPrssTrPrssrIsLwrThnThPrssrD" 4 "ExtrmUndrPrssTrPrssrIsAtALvlWhr" 5 "NotDefined" 6 "ErrorIndicator" 7 "NotAvailable" ;
+VAL_ 3221225472 LaneDepartureWarningEnableCmd 0 "Disable Lane Departure Warning" 1 "Enable Lane Departure Warning" 2 "Reserved" 3 "Dont care" ;
+VAL_ 3221225472 DrvrOccpntClssfctionSystemStatus 0 "empty" 1 "child" 2 "small adult" 3 "adult" 4 "large adult" 5 "reserved" 6 "Error  Classification of occupant cannot be determined" 7 "not available" ;
+VAL_ 3221225472 PssngrOccpntClssfctnSystemStatus 0 "empty" 1 "child" 2 "small adult" 4 "reserved" 3 "adult" ;
+VAL_ 3221225472 OccpntClssificationSystem3Status 0 "empty" 1 "occupied" 2 "Error  Classification cannot be determined" 3 "not available" ;
+VAL_ 3221225472 OccpntClssificationSystem4Status 0 "empty" 1 "occupied" 2 "Error  Classification cannot be determined" 3 "not available" ;
+VAL_ 3221225472 OccpntClssificationSystem5Status 0 "empty" 1 "occupied" 2 "Error  Classification cannot be determined" 3 "not available" ;
+VAL_ 3221225472 OccpntClssificationSystem6Status 0 "empty" 1 "occupied" 2 "Error  Classification cannot be determined" 3 "not available" ;
+VAL_ 3221225472 OccpntClssificationSystem7Status 0 "empty" 1 "occupied" 2 "Error  Classification cannot be determined" 3 "not available" ;
+VAL_ 3221225472 OccpntClssificationSystem8Status 0 "empty" 1 "occupied" 2 "Error  Classification cannot be determined" 3 "not available" ;
+VAL_ 3221225472 OccpntClssificationSystem9Status 0 "empty" 1 "occupied" 2 "Error  Classification cannot be determined" 3 "not available" ;
+VAL_ 3221225472 OccpntClssficationSystem10Status 0 "empty" 1 "occupied" 2 "Error  Classification cannot be determined" 3 "not available" ;
+VAL_ 3221225472 CabNoiseCtrlStatus 0 "Cab Noise Control System ONLine" 1 "Cab Noise Control System OFFLine" 2 "Error Indicator" 3 "Not Available/Not Requested" ;
+VAL_ 3221225472 CabNoiseCtrlTuningStatus 0 "Manual Tuning Mode" 1 "Manual Tuning Mode  Command Complete" 2 "Manual Tuning Mode  Saving Data" 13 "Reserved" 7 "Manual Tuning Denied  Requires Security Verification" 8 "Automatic Tuning Mode" 9 "Automatic Tuning Mode  Command Complete" 10 "Automatic Tuning Mode  Saving Data" 14 "Tuning Mode  Error" 15 "Not Available/Not Tuning/Not Requested" 3 "Reserved" 4 "Reserved" 5 "Reserved" 6 "Reserved" 11 "Reserved" 12 "Reserved" ;
+VAL_ 3221225472 CabNoiseCtrlState 0 "Take Cab Noise Control System Off Line" 1 "Bring Cab Noise Control System On Line" 2 "Reserved" 3 "Dont Care/Not Commanded" ;
+VAL_ 3221225472 CabNoiseCtrlTuningState 0 "Activate Manual Tuning Wait for Save and Exit Commands" 1 "Activate Automatic Tuning Wait for Save and Exit Commands" 2 "Activate Automatic Tuning State Saveing Parameters Exit on Completion" 3 "Remain In Tuning Save Current Parameters" 4 "Exit Tuning Not Saving Parameters" 5 "Exit Tuning Saving Parameters" 6 "Reserved" 7 "Dont Care NOT Commanded" ;
+VAL_ 3221225472 MaterialLiftSwitch 0 "Dont Lift" 1 "Lift" 2 "Error" 3 "Not Available" ;
+VAL_ 3221225472 MaterialDropSwitch 0 "Dont Drop" 1 "Drop" 2 "Error" 3 "Not Available" ;
+VAL_ 3221225472 GneratorCurrentBoostActiveStatus 0 "Off" 1 "On" 2 "Error" 3 "Not Available" ;
+VAL_ 3221225472 MaterialLiftActiveStatus 0 "Off" 1 "On" 2 "Error" 3 "Not Available" ;
+VAL_ 3221225472 MaterialDropActiveStatus 0 "Off" 1 "On" 2 "Error" 3 "Not Available" ;
+VAL_ 3221225472 LiftRelayCtrl 0 "Off Disable Lift Relay Request" 1 "On Enable Lift Relay Request" 2 "Reserved" 3 "Take No Action" ;
+VAL_ 3221225472 DropRelayCtrl 0 "Off Disable Drop Relay Request" 1 "On Enable Drop Relay Request" 2 "Reserved" 3 "Take No Action" ;
+VAL_ 3221225472 GeneratorOverheatStatus 0 "Not Overheat" 1 "Overheat" 2 "Error" 3 "Not Available" ;
+VAL_ 3221225472 GnstSystmOtputVoltageRangeStatus 0 "Out of Range" 1 "In Range" 2 "Error" 3 "Not Available" ;
+VAL_ 3221225472 Grapple_MagnetSelectionSwitch 0 "Grapple Selected" 1 "Magnet Selected" 2 "Error" 3 "Not Available" ;
+VAL_ 3221225472 GensetSoftstartActiveStatus 0 "Off" 1 "On" 2 "Error" 3 "Not Available" ;
+VAL_ 3221225472 ReverseCurrentRangeSetting 0 "1" 1 "2" 2 "3" 3 "4" 4 "5" 5 "6" 6 "7" 7 "8" 8 "9" 9 "10" 10 "11" 11 "12" 12 "13" 13 "14" 14 "15" 15 "16" 30 "Error" 31 "Not Available" ;
+VAL_ 3221225472 GensetEnableActiveStatus 0 "Not Enabled" 1 "Enabled" 2 "Error" 3 "Not Avaialble" ;
+VAL_ 3221225472 VoltageMonitorActiveStatus 0 "Monitor is Off" 1 "Monitor is On" 2 "Error" 3 "Not Available" ;
+VAL_ 3221225472 GeneratorDutyCycleExceededStatus 0 "Duty Cycle Not Exceed" 1 "Duty Cycle Exceed" 2 "Error" 3 "Not Avaiable" ;
+VAL_ 3221225472 LwVltgDscnnctDsiredOperatingMode 0 "Automatic" 4 "Manual Disconnect" 5 "Manual Connect" 15 "No change" ;
+VAL_ 3221225472 LwVltgDscnnctMnalDisconnectState 0 "Input off" 1 "Input on" 2 "Error" 3 "Not installed" ;
+VAL_ 3221225472 LwVltgDscnnectManualConnectState 0 "Input off" 1 "Input on" 2 "Error" 3 "Not installed" ;
+VAL_ 3221225472 LwVltgDscnnctCrrentOperatingMode 0 "Automatic" 4 "Manual Disconnect via J1939 request" 5 "Manual Connect via J1939 request" 8 "Manual Disconnect via hardwired input" 9 "Manual Connect via hardwired input" 15 "Not available" ;
+VAL_ 3221225472 LowVoltageDisconnectOutput3State 0 "Output off or disconnected" 1 "Output on or connected" 2 "Disconnect alarm expired output off or disconnected" 3 "Disconnect pending alarm active" 4 "Connect pending alarm active" 14 "Output fault" 15 "Not available or not installed" ;
+VAL_ 3221225472 LowVoltageDisconnectOutput2State 0 "Output off or disconnected" 1 "Output on or connected" 2 "Disconnect alarm expired output off or disconnected" 3 "Disconnect pending alarm active" 4 "Connect pending alarm active" 14 "Output fault" 15 "Not available or not installed" ;
+VAL_ 3221225472 LowVoltageDisconnectOutput1State 0 "Output off or disconnected" 1 "Output on or connected" 2 "Disconnect alarm expired output off or disconnected" 3 "Disconnect pending alarm active" 4 "Connect pending alarm active" 14 "Output fault" 15 "Not available or not installed" ;
+VAL_ 3221225472 LwVltgeDisconnectVoutOutputState 0 "Output off or disconnected" 1 "Output on or connected" 2 "Disconnect alarm expired output off or disconnected" 3 "Disconnect pending alarm active" 4 "Connect pending alarm active" 14 "Output fault" 15 "Not available or not installed" ;
+VAL_ 3221225472 Joystick1Lamp1Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick1Lamp2Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick1Lamp3Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick1Lamp4Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick1Lamp5Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick1Lamp6Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick1Lamp7Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick1Lamp8Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick1Lamp9Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick1Lamp10Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick2Lamp1Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick2Lamp2Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick2Lamp3Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick2Lamp4Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick2Lamp5Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick2Lamp6Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick2Lamp7Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick2Lamp8Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick2Lamp9Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick2Lamp10Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick3Lamp1Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick3Lamp2Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick3Lamp3Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick3Lamp4Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick3Lamp5Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick3Lamp6Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick3Lamp7Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick3Lamp8Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick3Lamp9Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 Joystick3Lamp10Cmd 0 "Off" 1 "On" 2 "Blinking" 3 "Not available or not installed" ;
+VAL_ 3221225472 IntkVlvActtnSystmOlPrss1SlndCtrl 0 "off" 1 "on" 2 "reserved for SAE assignment" 3 "not available" ;
+VAL_ 3221225472 IntkVlvActtnSystmOlPrss2SlndCtrl 0 "off" 1 "on" 2 "reserved for SAE assignment" 3 "not available" ;
+VAL_ 3221225472 RunningLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 LowBeamHeadLightData 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 HighBeamHeadLightData 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 TractorFrontFogLights 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 RotatingBeaconLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 RightTurnSignalLights 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 LeftTurnSignalLights 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 CenterStopLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 RightStopLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 LeftStopLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 ImplementClearanceLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 TractorClearanceLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 ImplementMarkerLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 TractorMarkerLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 RearFogLights 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 TrctorUndersideMountedWorkLights 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 TractorRearLowMountedWorkLights 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 TractorRearHighMountedWorkLights 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 TractorSideLowMountedWorkLights 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 TractorSideHighMountedWorkLights 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 TractorFrontLowMountedWorkLights 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 TrctorFrontHighMountedWorkLights 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 ImplementOEMOption2Light 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 ImplementOEMOption1Light 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 ImplementRightFacingWorkLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 ImplementLeftFacingWorkLight 0 "Deactivate" 1 "Activate" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 ImplementRightForwardWorkLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 ImplementLeftForwardWorkLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 ImplementRearWorkLight 0 "Deactivated" 1 "Activated" 2 "Fault Detected" 3 "Not Available" ;
+VAL_ 3221225472 TractorFrontFogLightsCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 RotatingBeaconLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 CenterStopLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 RightStopLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 LeftStopLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 ImplementClearanceLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 TractorClearanceLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 ImplementMarkerLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 TractorMarkerLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 RearFogLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 TrctrUndrsdeMountedWorkLightsCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 TrctrRearLowMountedWorkLightsCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 TrctrRarHighMountedWorkLightsCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 TrctrSideLowMountedWorkLightsCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 TrctrSdeHighMountedWorkLightsCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 TrctrFrntLowMountedWorkLightsCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 TrctrFrntHghMountedWorkLightsCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 ImplementOEMOption2LightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 ImplementOEMOption1LightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 ImplementRightFacingWorkLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 ImplementLeftFacingWorkLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 LightingDataRqCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 ImplmentRightForwardWorkLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 ImplementLeftForwardWorkLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 ImplementRearWorkLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 BladeCtrlMode 0 "Manual mode" 1 "Automatic mode" 2 "Inactive automatic mode" ;
+VAL_ 3221225472 BladeCtrlModeLeft 0 "Manual" 1 "Auto" 2 "Inactive Auto" 14 "Error" 15 "Not Available" ;
+VAL_ 3221225472 BladeCtrlModeRight 0 "Manual" 1 "Auto" 2 "Inactive Auto" 14 "Error" 15 "Not Available" ;
+VAL_ 3221225472 LandLevelingSystemEnableStatus 0 "Disabled" 2 "Error" 3 "Not available / Not installed" ;
+VAL_ 3221225472 EngOprtrPrmryIntrmdtSpdSlctState 0 "Control state is ISC functionality is not requested engine operates normally" 1 "thru 1101  Control state is ISC Setting 1 thru 13 in sequential order" 14 "SAE reserved" 15 "not available" ;
+VAL_ 3221225472 EngOprtrPrmryIntrmdteSpeedSelect 0 "indicates that the ISC functionality is not requested engine operates normally" 1 "thru 1101  indicates that the ISC Setting 1 thru 13 in sequential order is selected" 14 "error condition" 15 "not available" ;
+VAL_ 3221225472 CabVentilation 0 "Cab not ventilated" 1 "Cab is ventilated" 2 "Reserved" 3 "Not available" ;
+VAL_ 3221225472 EngHeatingZone 0 "Engine heating zone off" 1 "Engine heating zone on" 2 "Reserved" 3 "Not available" ;
+VAL_ 3221225472 CabHeatingZone 0 "Cab heating zone off" 1 "Cab heating zone on" 2 "Reserved" 3 "Not available" ;
+VAL_ 3221225472 EngHydPressGovernorModeIndicator 0 "Disabled" 1 "Enabled" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 3221225472 EngHydPressGovernorSwitch 0 "Pressure Mode Inactive" 1 "Pressure Mode Active" 2 "Error Indicator" 3 "Not Available" ;
+VAL_ 3221225472 FireApparatusPumpEngagement 0 "Pump not engaged" 1 "Pump engaged" 2 "Error" 3 "Not available or not installed" ;
+VAL_ 3221225472 HydBrkePressWarningStateCircuit1 0 "Pressure level sufficient" 1 "Pressure level below warning level" 2 "Error indicator" 3 "Not available" ;
+VAL_ 3221225472 HydBrkePressWarningStateCircuit2 0 "Pressure level sufficient" 1 "Pressure level below warning level" 2 "Error indicator" 3 "Not available" ;
+VAL_ 3221225472 HydBrakePressSupplyStateCircuit1 0 "Supply is not reliable" 1 "Supply is reliable" 2 "Error indicator" 3 "Not available" ;
+VAL_ 3221225472 HydBrakePressSupplyStateCircuit2 0 "Supply is not reliable" 1 "Supply is reliable" 2 "Error indicator" 3 "Not available" ;
+VAL_ 3221225472 HydBrakeSystemAudibleWarningCmd 0 "Audible warning off" 1 "Audible warning on" 2 "Reserved" 3 "Dont care" ;
+VAL_ 3221225472 HydBrakeFluidLevelSwitch 0 "Fluid level is not sufficient" 1 "Fluid level is sufficient" 2 "Error indicator" 3 "Not available" ;
+VAL_ 3221225472 VehicleType 0 "Towing or towed vehicle" 1 "Dolly axle" ;
+VAL_ 3221225472 ODDRequest 0 "ODD off" 1 "ODD on" 3 "Take no action" ;
+VAL_ 3221225472 EngineControlAllowed 0 "Engine control not allowed" 1 "Engine control allowed" ;
+VAL_ 3221225472 EngineRunning 0 "Engine not running" 1 "Engine running" ;
+VAL_ 3221225472 EngineTorqueMode 0 "Low idle governor/no request (de" 1 "Accelerator pedal/operator selec" 2 "Cruise control" 3 "PTO governor" 4 "Road speed governor" 5 "ASR control" 6 "Transmission control" 7 "ABS control" 8 "Torque limiting" 9 "High speed governor" 10 "Braking system" 11 "Remote accelerator" 15 "Not available" ;
+VAL_ 3221225472 FirstClutchDpdtPTOFeedback 0 "Not engaged" 1 "Engaged" ;
+VAL_ 3221225472 SecClutchDptdPTOFeedback 0 "Not engaged" 1 "Engaged" ;
+VAL_ 3221225472 FirstEngineMtdPTOFeedback 0 "Limits not activated" 1 "Limits activated" ;
+VAL_ 3221225472 SecEngineMtdPTOFeedback 0 "Limits not activated" 1 "Limits activated" ;
+VAL_ 3221225472 PTOControlAllowed 0 "PTO control not allowed" 1 "PTO control allowed" ;
+VAL_ 3221225472 TorqueConvtOilTempWarning 0 "No warning" 1 "Prewarning" 2 "Warning" ;
+VAL_ 3221225472 StarterActive 0 "Starter not active" 1 "Starter active" ;
+VAL_ 3221225472 ClutchIndptdPTOFeedback 0 "Not engaged" 1 "Engaged" ;
+VAL_ 3221225472 EngineCoolantTempWarning 0 "No warning" 1 "Prewarning" 2 "Warning" ;
+VAL_ 3221225472 EngineOilPressureWarning 0 "No warning" 1 "Warning" ;
+VAL_ 3221225472 FuelLevelWarning 0 "Fuel level warning off" 1 "Fuel level warning on" ;
+VAL_ 3221225472 ODDStatus 0 "ODD inactive" 1 "ODD active" ;
+VAL_ 3221225472 ClutchIndpdtPTOSwitch 0 "Switched off" 1 "Switched on" ;
+VAL_ 3221225472 FirstEngineMtdPTOSwitch 0 "Switched off" 1 "Switched on" ;
+VAL_ 3221225472 StarterLockoutSwitch 0 "Switched off" 1 "Switched on" ;
+VAL_ 3221225472 EngineStartSwitch 0 "Switched off" 1 "Switched on" ;
+VAL_ 3221225472 EngineStopSwitch 0 "Switched off" 1 "Switched on" ;
+VAL_ 3221225472 RefusePackerStepSwitch 0 "Switched off" 1 "Switched on" ;
+VAL_ 3221225472 OperatingPanelActive 0 "Operating panel not active" 1 "Operating panel active" ;
+VAL_ 3221225472 FirstClutchDpdtPTOSwitch 0 "Switched off" 1 "Switched on" ;
+VAL_ 3221225472 SecClutchDpdtPTOSwitch 0 "Switched off" 1 "Switched on" ;
+VAL_ 3221225472 SecEngineMtdPTOSwitch 0 "Switched off" 1 "Switched on" ;
+VAL_ 3221225472 TrailerLeftStopLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerRearWarningLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerRightCrnMarkerLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerRightDirIndLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerRightRearFogLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerRightRearLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerRightRearRegPltLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailRightRearWidIndLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerRightReversingLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerRightSideMrkLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerRightStopLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerRotatingIdentLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerWorkLamp 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerInteriorLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerLeftCrnMarkerLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerLeftDirIndLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerLeftRearFogLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerLeftRearLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerLeftRearRegPltLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerLeftRearWidIndLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerLeftReversingLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 TrailerLeftSideMarkerLight 0 "Lamp(s) not lit" 1 "Lamp(s) lit" ;
+VAL_ 3221225472 ProtocolCtrlInformation 0 "Single frame" 1 "First frame" 2 "Consecutive frame" 3 "Flow control " ;
+VAL_ 3221225472 FlowStatus 0 "Continue To Send" 1 "Wait " 2 "Overflow" ;
+VAL_ 3221225472 FilterMode 0 "BlockSpecificPGNs" 1 "PassSpecificPGNs" ;
+VAL_ 3221225472 ControlByte 0 "MFDB_Request" 1 "MFDB_Response" 2 "MFDB_Add" 3 "MFDB_Delete" 4 "MFDB_Clear" 5 "MFDB_SetMode" 6 "MFDB_CreateEntry" ;
+VAL_ 3221225472 RunningLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 TransGearShiftInhibitRq 0 "Gear shifts are allowed disable function" 1 "Gear shifts are inhibited enable function" 3 "Take no action leave function as is" 2 "Reserved" ;
+VAL_ 3221225472 TrnsTrqeConverterLockupDisableRq 0 "Allow torque converter lockup" 1 "Disable torque converter lockup" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 DisengageDrivelineRq 0 "Allow driveline engagement" 1 "Disengage driveline" 3 "Take no action" 2 "Reserved" ;
+VAL_ 3221225472 TransReverseGearShiftInhibitRq 0 "Allow shifts into Reverse gear" 1 "Inhibit shifts into Reverse gear and shift transmission to Neutral if already in Reverse or attempting to shift to" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 DisengageDiffLockRqFrontAxle1 0 "Engage differential lock" 1 "Disengage differential lock" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 DisengageDiffLockRqFrontAxle2 0 "Engage differential lock" 1 "Disengage differential lock" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 DisengageDiffLockRqRearAxle1 0 "Engage differential lock" 1 "Disengage differential lock" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 DisengageDiffLockRqRearAxle2 0 "Engage differential lock" 1 "Disengage differential lock" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 DisengageDiffLockRqCentral 0 "Engage differential lock" 1 "Disengage differential lock" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 DisengageDiffLockRqCentralFront 0 "Engage differential lock" 1 "Disengage differential lock" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 DisengageDiffLockRqCentralRear 0 "Engage differential lock" 1 "Disengage differential lock" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 TransMode1 0 "Disable" 1 "Enable" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 TransMode2 0 "Disable" 1 "Enable" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 TransMode3 0 "Disable" 1 "Enable" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 TransMode4 0 "Disable" 1 "Enable" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 TransRequestedLaunchGear 0 "No specific launch gear requested use default launch gear" 1 "Launch the vehicle in 1st gear" 2 "Launch the vehicle in 2nd gear" 3 "Launch the vehicle in 3rd gear" 4 "Launch the vehicle in 4th gear" 5 "Launch the vehicle in 5th gear" 6 "Launch the vehicle in 6th gear" 7 "Launch the vehicle in 7th gear" 8 "Launch the vehicle in 8th gear" 9 "Launch the vehicle in Reverse 1" 10 "Launch the vehicle in Reverse 2" 11 "Launch the vehicle in Reverse 3" 12 "Launch the vehicle in Reverse 4" 13 "Reserved" 14 "Error" 15 "Not Available" ;
+VAL_ 3221225472 TrnsShftSlectorDisplayModeSwitch 0 "Off" 1 "On" 2 "Error" 3 "Not available" ;
+VAL_ 3221225472 TransMode5 0 "Disable" 1 "Enable" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 TransMode6 0 "Disable" 1 "Enable" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 TransMode7 0 "Disable" 1 "Enable" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 TransMode8 0 "Disable" 1 "Enable" 2 "Reserved" 3 "Take no action" ;
+VAL_ 3221225472 EngOverrideCtrlMode 0 "Override disabled  Disable any existing control commanded by the source of this command" 1 "Speed control  Govern speed to the included desired speed value" 2 "Torque control  Control torque to the included desired torque value" 3 "Speed/torque limit control  Limit speed and/or torque based on the included limit values The speed limit governor is" ;
+VAL_ 3221225472 EngRequestedSpeedCtrlConditions 0 "Transient Optimized for driveline disengaged and nonlockup conditions" 1 "Stability Optimized for driveline disengaged and nonlockup conditions" 3 "Stability Optimized for driveline engaged and/or in lockup condition 2 eg PTO driveline" 2 "Stability Optimized for driveline engaged and/or in lockup condition 1 eg vehicle driveline" ;
+VAL_ 3221225472 OverrideCtrlModePriority 0 "Highest priority" 1 "High priority" 2 "Medium priority" 3 "Low priority" ;
+VAL_ 3221225472 TSC1TransRate 0 "1000 ms transmission rate" 1 "750 ms transmission rate" 2 "500 ms transmission rate" 3 "250 ms transmission rate" 4 "100 ms transmission rate" 5 "50 ms transmission rate" 6 "20 ms transmission rate" 7 "Use standard TSC1 transmission rates of 10 ms to engine" ;
+VAL_ 3221225472 TSC1CtrlPurpose 0 "P1  Accelerator Pedal/Operator Selection" 1 "P2  Cruise Control" 2 "P3  PTO Governor" 3 "P4  Road Speed Governor" 4 "P5  Engine Protection" 5 "11110  P6P31  Reserved for SAE Assignment" 31 "P32  Temporary Power Train Control Original use of TSC1 Command" ;
+VAL_ 3221225472 EngRequestedTrq_Fractional 8 "1111  not available" 0 "0000" 1 "0125" 7 "0875" ;
+VAL_ 3221225472 XBREBIMode 0 "No Endurance Brake Integration allowed" 1 "Only Endurance Brakes allowed" 2 "Endurance Brake Integration allowed" 3 "Not defined" ;
+VAL_ 3221225472 XBRPriority 0 "Highest priority  used for emergency situations eg for future Collision Avoidance System This mode overrides" 1 "High priority  not defined" 2 "Medium priority  used for ACCSystems This mode does not override brake protection measures of the brake" 3 "Low priority  used in override disabled XBR Control Mode" ;
+VAL_ 3221225472 XBRCtrlMode 0 "Override disabled  Disable any existing control commanded by the source of this command" 1 "Acceleration control with addition mode  Add the XBR acceleration demand to the drivers acceleration demand" 2 "Acceleration control with maximum mode  Execute the XBR acceleration demand if it is higher than the drivers" 3 "Not defined" ;
+VAL_ 3221225472 SteerWheelAngleSensorType 0 "Relative measuring principle" 1 "Absolute measuring principle" 2 "Reserved" 3 "Not Available" ;
+VAL_ 3221225472 HighBeamHeadLightsCmdFb 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 LowBeamHeadLightsCmdFb 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 RunningLightsCmdFb 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 HazardLightsCmdFb 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 RightTurnSignalLightsCmdFb 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 3221225472 LeftTurnSignalLightsCmdFb 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 2147484440 PwrSevereWarn 2 "All Clear" 1 "Warning Active" 0 "Offline" ;
+VAL_ 2147516432 HighBeamHeadLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 2147516432 LowBeamHeadLightCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 2147516432 RightTurnSignalLightsCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+VAL_ 2147516432 LeftTurnSignalLightsCmd 0 "Deactivate" 1 "Activate" 2 "Reserved" 3 "Dont Care" ;
+
